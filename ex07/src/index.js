@@ -2,14 +2,18 @@
 function multiplyArrayFunction(myArray) {
     var product = 1;
     var sum = 0;
+    var res = [];
     for(var i = 0; i < myArray.length; i++) {
         for(var j = 0; j < myArray[i].length; j++) {
             sum += (myArray[i][j]);
             product *= (myArray[i][j]);
         }
     }
-
-    return { product, sum };
+    res = [
+        product,
+        sum
+    ];
+    return res;
 
 }
 // Only change code above this line
